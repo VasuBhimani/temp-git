@@ -18,8 +18,8 @@ jobs:
     steps:
       - name: installing flask
         run: |
-        sudo apt update
-        sudo apt install python python-pip
+          sudo apt update
+          sudo apt install python python-pip
 
       - name: printing 
         run: echo "python version is $(python --version)"
