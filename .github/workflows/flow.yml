@@ -11,3 +11,11 @@ jobs:
     steps:
       - name: first hello steps
         run: echo "hello users"
+      
+jobs:
+  my-first-job2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: first hello steps
+        run: echo "hello users"
