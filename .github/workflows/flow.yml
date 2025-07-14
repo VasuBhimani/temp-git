@@ -12,10 +12,15 @@ jobs:
       - name: first hello steps
         run: echo "hello users"
 
-  my-first-job2:
+  install-flask:
     needs: my-first-job
     runs-on: ubuntu-latest
-
     steps:
-      - name: first hello steps
-        run: echo "hello users"
+      name: installing flask
+      run: |
+        sudo apt update
+        sudo apt install python python-pip
+
+      name: printing 
+      run: echo "python version is $(python --version)"
+
