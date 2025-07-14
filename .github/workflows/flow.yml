@@ -16,11 +16,11 @@ jobs:
     needs: my-first-job
     runs-on: ubuntu-latest
     steps:
-      name: installing flask
-      run: |
+      - name: installing flask
+        run: |
         sudo apt update
         sudo apt install python python-pip
 
-      name: printing 
-      run: echo "python version is $(python --version)"
+      - name: printing 
+        run: echo "python version is $(python --version)"
 
