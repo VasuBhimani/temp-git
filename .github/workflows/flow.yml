@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: first hello steps
         run: echo "hello users"
-      
 
   my-first-job2:
+    needs: my-first-job
     runs-on: ubuntu-latest
 
     steps:
